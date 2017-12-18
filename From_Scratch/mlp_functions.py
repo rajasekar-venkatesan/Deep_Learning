@@ -31,10 +31,10 @@ def del_grads():
     #     var.grad = np.zeros_like(var.grad)
     clear_grad_stack = []
 
-def softmax(in_var):
-    exps = np.exp(in_var.data - np.max(in_var.data))
-    out_var = exps / np.sum(exps)
-    return out_var.tolist()
+# def softmax(in_var):
+#     exps = np.exp(in_var.data - np.max(in_var.data))
+#     out_var = exps / np.sum(exps)
+#     return out_var.tolist()
 
 
 class variable():
