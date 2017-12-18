@@ -3,10 +3,8 @@ import numpy as np
 import time
 from mlp_functions import *
 
-x_list = [[[0, 0, 0]], [[0, 0, 1]], [[0, 1, 0]], [[0, 1, 1]],
-          [[1, 0, 0]], [[1, 0, 1]], [[1, 1, 0]], [[1, 1, 1]]]
-y_list = [[[0, 0]], [[1, 1]], [[1, 1]], [[0, 1]],
-          [[1, 1]], [[0, 1]], [[0, 1]], [[1, 1]]]
+x_list = [[[0, 0]], [[0, 1]], [[1, 0]], [[1, 1]]]
+y_list = [[[0]], [[1]], [[1]], [[0]]]
 
 x = [variable(x_item) for x_item in x_list]
 y = [variable(y_item) for y_item in y_list]
@@ -67,8 +65,6 @@ for x_train, y_train in zip(x, y):
     h_out = sigmoid_activation(h_in.out_var)
     f_in = matmul(h_out.out_var, h2o)
     f_out = sigmoid_activation(f_in.out_var)
-    # f_out = softmax(f_in.out_var)
-    # y_pred.append(f_out)
     y_pred.append(np.round(f_out.out_var.data, 2).tolist())
 
 print('Predicted Output: {}'.format(y_pred))
