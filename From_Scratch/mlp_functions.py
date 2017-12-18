@@ -18,8 +18,8 @@ def prep_data(in_data):
         return None
 
 def grad_back_prop():
-    for i in reversed(operations_stack):
-        i()
+    for operations in reversed(operations_stack):
+        operations()
 
 def del_op_stack():
     global operations_stack

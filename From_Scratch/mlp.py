@@ -67,5 +67,6 @@ for x_train, y_train in zip(x, y):
     f_out = sigmoid_activation(f_in.out_var)
     y_pred.append(np.round(f_out.out_var.data, 2).tolist())
 
+print('Actual Output: {}'.format(y_list))
 print('Predicted Output: {}'.format(y_pred))
 
