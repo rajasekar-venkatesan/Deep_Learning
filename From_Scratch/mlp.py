@@ -1,7 +1,7 @@
 #imports
 import numpy as np
 import time
-from mlp_functions import *
+from RaDeep import *
 
 x_list = [[[0, 0]], [[0, 1]], [[1, 0]], [[1, 1]]]
 y_list = [[[0]], [[1]], [[1]], [[0]]]

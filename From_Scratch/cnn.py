@@ -1,7 +1,7 @@
 #imports
 import numpy as np
 import time
-from cnn_functions import *
+from RaDeep import *
 
 
 X_arr = np.array([[1, 2, 3, 3, 2, 1],
