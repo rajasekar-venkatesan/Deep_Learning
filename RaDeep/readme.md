@@ -1,5 +1,6 @@
 RaDeep Package
 ==============
+(Dependencies - numpy)
 
 - Automatic Gradient Calculation
 - One Step Back Propagation
