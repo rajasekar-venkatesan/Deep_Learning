@@ -12,30 +12,30 @@ RaDeep Package
 Currently supports:
 -------------------
 
-RaDeep variable
+RaDeep variable:
 
-Has attributes:
-- data
-- grad
+    Has attributes:
+    - data
+    - grad
 
-Has functions:
-- read data
-- write data
-- read gradient
-- write gradient
-- accumulate gradient
-- clear gradient
+    Has functions:
+    - read data
+    - write data
+    - read gradient
+    - write gradient
+    - accumulate gradient
+    - clear gradient
 
 
 RaDeep Operations:
 
-- Matrix Multiplication
-- Matrix Addition / Subraction
-- Sum all elements
-- Square Matrix
-- 2D Convolution
+    - Matrix Multiplication
+    - Matrix Addition / Subraction
+    - Sum all elements
+    - Square Matrix
+    - 2D Convolution
   
 RaDeep Activation Functions:
 
-- Sigmoidal Activation
-- Relu Activation
+    - Sigmoidal Activation
+    - Relu Activation
