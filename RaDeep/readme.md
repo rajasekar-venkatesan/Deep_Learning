@@ -1,4 +1,5 @@
 RaDeep Package
+==============
 
 - Automatic Gradient Calculation
 - One Step Back Propagation
@@ -6,7 +7,7 @@ RaDeep Package
 - Allows Tracking Gradients Through Network
 
 Currently supports:
-===================
+-------------------
 
 ==> RaDeep variable (attributes: data, grad)
 
