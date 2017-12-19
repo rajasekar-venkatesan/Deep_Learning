@@ -5,21 +5,36 @@ RaDeep Package
 - One Step Back Propagation
 - Easy Visibility of Gradient
 - Allows Tracking Gradients Through Network
+- One Step to Clear All Gradients
+- See the List of Operations Carried Over by the Network
 
 Currently supports:
 -------------------
 
-==> RaDeep variable (attributes: data, grad)
+RaDeep variable
 
-==> RaDeep Operations:
+Has attributes:
+- data
+- grad
 
-  Matrix Multiplication
-  Matrix Addition / Subraction
-  Sum all elements
-  Square Matrix
-  2D Convolution
+Has functions:
+- read data
+- write data
+- read gradient
+- write gradient
+- accumulate gradient
+- clear gradient
+
+
+RaDeep Operations:
+
+- Matrix Multiplication
+- Matrix Addition / Subraction
+- Sum all elements
+- Square Matrix
+- 2D Convolution
   
-==> RaDeep Activation Functions:
+RaDeep Activation Functions:
 
-  Sigmoidal Activation
-  Relu Activation
+- Sigmoidal Activation
+- Relu Activation
